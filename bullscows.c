@@ -320,11 +320,11 @@ void show_bulls_and_cows(int guess, int answer)
 
         if (guessDigit == answerDigit)
         {
-            bullsString[guessLength - currentGuessIndex] = 'B';
+            bullsString[guessLength - currentGuessIndex] = 'A';
         }
         else if (digit_is_in(answer, guessDigit))
         {
-            bullsString[guessLength - currentGuessIndex] = 'C';
+            bullsString[guessLength - currentGuessIndex] = 'B';
         }
         else
         {
@@ -332,7 +332,7 @@ void show_bulls_and_cows(int guess, int answer)
         }
     }
 
-    printf("\nBulls = B\n");
-    printf("Cows = C\n");
+    printf("\nBulls = A\n");
+    printf("Cows = B\n");
     printf("%s\n\n", bullsString);
 }
