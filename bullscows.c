@@ -60,7 +60,6 @@ int main(void)
 
     while (1)
     {
-
         int answer = get_random_digits(4);
 
         printf("Welcome to Bulls and Cows\n");
